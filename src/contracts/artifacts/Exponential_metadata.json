@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Compound",
+			"kind": "dev",
+			"methods": {},
+			"title": "Exponential module for storing fixed-precision decimals",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Exp is a struct which stores decimals with a fixed precision of 18 decimal places.         Thus, if we wanted to store the 5.1, mantissa would store 5.1e18. That is:         `Exp({mantissa: 5100000000000000000})`.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DeFIL.sol": "Exponential"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DeFIL.sol": {
+			"keccak256": "0x0a4079ee5ede5bb45ac6b3d8f5b0bf127bffeea778a469caf0a8b270ca651187",
+			"urls": [
+				"bzz-raw://4dce80896a1361793f2a5bab4a7b23becc3404ed0950f6e2a8ea1ebf8c4e5657",
+				"dweb:/ipfs/Qmchh6ghwRWE7GeSSd6bqW3TWdnVo9ENiqvKnTcSd6Madz"
+			]
+		}
+	},
+	"version": 1
+}

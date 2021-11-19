@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "cash",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "borrows",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserves",
+						"type": "uint256"
+					}
+				],
+				"name": "getBorrowRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "cash",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "borrows",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserves",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveFactorMantissa",
+						"type": "uint256"
+					}
+				],
+				"name": "getSupplyRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isInterestRateModel",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Compound",
+			"kind": "dev",
+			"methods": {
+				"getBorrowRate(uint256,uint256,uint256)": {
+					"params": {
+						"borrows": "The total amount of borrows the market has outstanding",
+						"cash": "The total amount of cash the market has",
+						"reserves": "The total amnount of reserves the market has"
+					},
+					"returns": {
+						"_0": "The borrow rate per block (as a percentage, and scaled by 1e18)"
+					}
+				},
+				"getSupplyRate(uint256,uint256,uint256,uint256)": {
+					"params": {
+						"borrows": "The total amount of borrows the market has outstanding",
+						"cash": "The total amount of cash the market has",
+						"reserveFactorMantissa": "The current reserve factor the market has",
+						"reserves": "The total amnount of reserves the market has"
+					},
+					"returns": {
+						"_0": "The supply rate per block (as a percentage, and scaled by 1e18)"
+					}
+				}
+			},
+			"title": "Compound's InterestRateModel Interface",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getBorrowRate(uint256,uint256,uint256)": {
+					"notice": "Calculates the current borrow interest rate per block"
+				},
+				"getSupplyRate(uint256,uint256,uint256,uint256)": {
+					"notice": "Calculates the current supply interest rate per block"
+				},
+				"isInterestRateModel()": {
+					"notice": "Indicator that this is an InterestRateModel contract (for inspection)"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DeFIL.sol": "InterestRateModel"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DeFIL.sol": {
+			"keccak256": "0x0a4079ee5ede5bb45ac6b3d8f5b0bf127bffeea778a469caf0a8b270ca651187",
+			"urls": [
+				"bzz-raw://4dce80896a1361793f2a5bab4a7b23becc3404ed0950f6e2a8ea1ebf8c4e5657",
+				"dweb:/ipfs/Qmchh6ghwRWE7GeSSd6bqW3TWdnVo9ENiqvKnTcSd6Madz"
+			]
+		}
+	},
+	"version": 1
+}

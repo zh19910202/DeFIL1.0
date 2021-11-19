@@ -1,0 +1,451 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "NewNFTMachine",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "NFTMachineCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTMachineToOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTMachines",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "poolName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeStamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "power",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "filCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastSellTimeStamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expire",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counts",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_poolName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_power",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_filCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expire",
+						"type": "uint256"
+					}
+				],
+				"name": "commitNFTCreateRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "onwer",
+						"type": "address"
+					}
+				],
+				"name": "createNFTMachine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "createPendingQueue",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "ID",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "poolName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeStamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "power",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "filCount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lastSellTimeStamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "expire",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "counts",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct NFTMachineFactory.NFTMachine",
+						"name": "nft",
+						"type": "tuple"
+					},
+					{
+						"internalType": "bool",
+						"name": "onlyOnce",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_who",
+						"type": "address"
+					}
+				],
+				"name": "getNFTPendingReq",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "ID",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "poolName",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "timeStamp",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "power",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "filCount",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "lastSellTimeStamp",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "expire",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "counts",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct NFTMachineFactory.NFTMachine",
+								"name": "nft",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bool",
+								"name": "onlyOnce",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct NFTMachineFactory.NFTCreateRequest[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					}
+				],
+				"name": "getOwnerNFTMachineCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/nftMachineFactory.sol": "NFTMachineFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/nftMachineFactory.sol": {
+			"keccak256": "0xb22fadd19197d698383a5990650031009f6c1f70683304018506fac3c1a8183b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://971f2e0927bfeaa9fb5e2ac19714df1c4abf765707eb5e3f54b0fca4ab195eaf",
+				"dweb:/ipfs/QmVwkzge6MQBneNhnXD8fbBA3cWkEpdZAn1tr9BY1T1m3F"
+			]
+		},
+		"contracts/ownable.sol": {
+			"keccak256": "0x946a02d019d843e29cc6af789375c2f517815535af97cd087262b7fe083bd144",
+			"urls": [
+				"bzz-raw://8e26924a62a27c18c9cd2fc9278f0a7c7501f9902d61a3755120f56b951b4742",
+				"dweb:/ipfs/QmNPZKUrM42bbZQpF5zBMRH3Zzt31W2ea4Kw9C9nYxFHRX"
+			]
+		},
+		"library/safemath.sol": {
+			"keccak256": "0xde6790d506ed5530f0b4aaf1519aa4f50fcc08ab0bf8c8ed9c21e185fcff1520",
+			"urls": [
+				"bzz-raw://78f9711422f8d81c0fb6727f2c9942ac3634d950c5f6f22c008ed89e7d6f1765",
+				"dweb:/ipfs/QmPnVtmgsurhySfhbjKN3eR1PXJmWBBUc3f56HjndREPwi"
+			]
+		}
+	},
+	"version": 1
+}

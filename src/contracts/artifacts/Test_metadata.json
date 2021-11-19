@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getTime",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Test.Info[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/test.sol": "Test"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/safemath.sol": {
+			"keccak256": "0xde6790d506ed5530f0b4aaf1519aa4f50fcc08ab0bf8c8ed9c21e185fcff1520",
+			"urls": [
+				"bzz-raw://78f9711422f8d81c0fb6727f2c9942ac3634d950c5f6f22c008ed89e7d6f1765",
+				"dweb:/ipfs/QmPnVtmgsurhySfhbjKN3eR1PXJmWBBUc3f56HjndREPwi"
+			]
+		},
+		"contracts/test.sol": {
+			"keccak256": "0xa444f84154089e603b23811fb38afbec153198368d86e7911fe4ad515b1677a7",
+			"urls": [
+				"bzz-raw://77e5983d88976b7991eda0f99651a5d5d8889c881a3ea70e0bb58a059fea344b",
+				"dweb:/ipfs/QmcN8gtVTTG26HEyh5mEFzLGs9s9wTYwgN7Atna7GHgghw"
+			]
+		}
+	},
+	"version": 1
+}
