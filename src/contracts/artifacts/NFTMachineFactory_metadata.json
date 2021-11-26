@@ -124,6 +124,30 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTOfOwnerInfos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "admin",
 				"outputs": [
@@ -351,6 +375,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "adds",
+						"type": "address"
+					}
+				],
+				"name": "getTokenIdToInfoMgrAll",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -425,11 +468,11 @@
 	},
 	"sources": {
 		"contracts/nftMachineFactory.sol": {
-			"keccak256": "0xb22fadd19197d698383a5990650031009f6c1f70683304018506fac3c1a8183b",
+			"keccak256": "0xe3bee0f2bebd38c4cb86a361b172afdc7eb6f405996f47b54a3563dee8134371",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://971f2e0927bfeaa9fb5e2ac19714df1c4abf765707eb5e3f54b0fca4ab195eaf",
-				"dweb:/ipfs/QmVwkzge6MQBneNhnXD8fbBA3cWkEpdZAn1tr9BY1T1m3F"
+				"bzz-raw://10623b6f839c87b0359b4244c58a0d3f7baec03cc9bc6e4ae587f62022126e5f",
+				"dweb:/ipfs/QmcKe5T1arqK5idwiMpJ8ZQf5bdqaKEow8tXd99Lfd3X5G"
 			]
 		},
 		"contracts/ownable.sol": {

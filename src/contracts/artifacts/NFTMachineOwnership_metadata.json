@@ -174,6 +174,30 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTOfOwnerInfos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "admin",
 				"outputs": [
@@ -438,6 +462,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "adds",
+						"type": "address"
+					}
+				],
+				"name": "getTokenIdToInfoMgrAll",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -581,19 +624,19 @@
 	},
 	"sources": {
 		"contracts/nftMachineFactory.sol": {
-			"keccak256": "0xb22fadd19197d698383a5990650031009f6c1f70683304018506fac3c1a8183b",
+			"keccak256": "0x8acc8d819d83ea9c1a39c81d1533a1f3db80197f28a10a3132b9006c5f537251",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://971f2e0927bfeaa9fb5e2ac19714df1c4abf765707eb5e3f54b0fca4ab195eaf",
-				"dweb:/ipfs/QmVwkzge6MQBneNhnXD8fbBA3cWkEpdZAn1tr9BY1T1m3F"
+				"bzz-raw://10026c5a5be388c8c4c997d6ae5a0200cd88ad114b58629d1e0511d538a616a0",
+				"dweb:/ipfs/QmYMvvmsY7DjK3zZndDWSpASwf4eAEky7H15eUzJN1ZDm6"
 			]
 		},
 		"contracts/nftMachineOwnership.sol": {
-			"keccak256": "0xc08e245b62e916ea9b50c59edb7b4b544a77c6794350e356085b6171c5840183",
+			"keccak256": "0x0248d1743ef36df25f7b800736ba6c119b56b3183d8bc2259087f5aba3d9a954",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://6d28e0493e3aa4fad5ccf0417c7a0afcbf597b46efdac51b5950350a1551cb46",
-				"dweb:/ipfs/QmbGYM3ZdfvgfJr6oNNPs4QigGLCHFxhrGWmSmVMwqWhrB"
+				"bzz-raw://338930b6c58f20d47ed7bd49cc43ffaac2c5c86ce946ddafe6a04a13f69de780",
+				"dweb:/ipfs/QmUt15Bt36kv8j9MhajKMMDktdYQ2tabm1tBD1xaQr34LA"
 			]
 		},
 		"contracts/ownable.sol": {

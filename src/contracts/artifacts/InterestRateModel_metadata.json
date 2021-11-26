@@ -129,7 +129,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/DeFIL.sol": "InterestRateModel"
+			"contracts/WhitePaperInterestRateModel.sol": "InterestRateModel"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -137,17 +137,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"contracts/DeFIL.sol": {
-			"keccak256": "0x0a4079ee5ede5bb45ac6b3d8f5b0bf127bffeea778a469caf0a8b270ca651187",
+		"contracts/WhitePaperInterestRateModel.sol": {
+			"keccak256": "0xd5e4f2813c5285c3c1468b792a2c914f81a1e20f3fb79a5500461e7ffd396b21",
 			"urls": [
-				"bzz-raw://4dce80896a1361793f2a5bab4a7b23becc3404ed0950f6e2a8ea1ebf8c4e5657",
-				"dweb:/ipfs/Qmchh6ghwRWE7GeSSd6bqW3TWdnVo9ENiqvKnTcSd6Madz"
+				"bzz-raw://73f808696759b52dd0257d02cf71716791c505bdbee05e54fd32f7e236896d0b",
+				"dweb:/ipfs/QmP8iwi9UoE5xAnWuUFmZk6ULhBTy1KksSKWBFhagUU1xx"
 			]
 		}
 	},

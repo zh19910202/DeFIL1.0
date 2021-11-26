@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "DeFil",
   "author": "snow",
-  "homepage": "./",
+  "homepage": "https://zh19910202.github.io/DeFIL1.0",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.5.1",
     "babel-polyfill": "6.26.0",

@@ -90,7 +90,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/DeFIL.sol": "Ownable"
+			"contracts/EFIL.sol": "Ownable"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -98,17 +98,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"contracts/DeFIL.sol": {
-			"keccak256": "0x0a4079ee5ede5bb45ac6b3d8f5b0bf127bffeea778a469caf0a8b270ca651187",
+		"contracts/EFIL.sol": {
+			"keccak256": "0x6bfe2beef5bb84bff7a5631158105313a3be8fdac34831089d3f832fbef2f8f4",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://4dce80896a1361793f2a5bab4a7b23becc3404ed0950f6e2a8ea1ebf8c4e5657",
-				"dweb:/ipfs/Qmchh6ghwRWE7GeSSd6bqW3TWdnVo9ENiqvKnTcSd6Madz"
+				"bzz-raw://27394bd74969817abec84f21997dc58ae102e5f0b513cd6a0ed096d657733557",
+				"dweb:/ipfs/QmXAjDxcMvj7gZ5jDbRtx7VVgiYFEn54Gm5bm8S3yggoKg"
 			]
 		}
 	},

@@ -245,6 +245,30 @@
             "inputs": [
                 {
                     "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NFTOfOwnerInfos",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
                     "name": "_efilAddress",
                     "type": "address"
                 }
@@ -582,6 +606,25 @@
             "type": "function"
         },
         {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "adds",
+                    "type": "address"
+                }
+            ],
+            "name": "getTokenIdToInfoMgrAll",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "",
+                    "type": "uint256[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "inputs": [],
             "name": "name",
             "outputs": [
@@ -758,6 +801,6 @@
             "type": "function"
         }
     ],
-    "address":"0xac854cC0929744AF184104003253F98cE6280E6A"
+    "address":"0x3E67496e5E8D09F87DA131f8A39E65aD245ADb99"
     
 }

@@ -22,7 +22,9 @@
         ownerNFTMachineCount[_to] = ownerNFTMachineCount[_to].add(1);
         ownerNFTMachineCount[_from] = ownerNFTMachineCount[_from].sub(1);
         NFTMachineToOwner[_tokenId] = _to;
-        emit Transfer(_from, _to, _tokenId);
+        AddTokenIdToInfoMgr(_tokenId,_to);
+        delTokenIdToInfoMgr(_tokenId,_from);
+        emit Transfer(_from, _to, _tokenId);  
     }
     
     function transfer(address _to, uint256 _tokenId) public override onlyOwnerOf(_tokenId) {

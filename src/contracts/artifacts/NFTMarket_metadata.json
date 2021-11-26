@@ -250,6 +250,30 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTOfOwnerInfos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "_efilAddress",
 						"type": "address"
 					}
@@ -587,6 +611,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "adds",
+						"type": "address"
+					}
+				],
+				"name": "getTokenIdToInfoMgrAll",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -791,26 +834,26 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"contracts/nftMachineFactory.sol": {
-			"keccak256": "0xb22fadd19197d698383a5990650031009f6c1f70683304018506fac3c1a8183b",
+			"keccak256": "0xe3bee0f2bebd38c4cb86a361b172afdc7eb6f405996f47b54a3563dee8134371",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://971f2e0927bfeaa9fb5e2ac19714df1c4abf765707eb5e3f54b0fca4ab195eaf",
-				"dweb:/ipfs/QmVwkzge6MQBneNhnXD8fbBA3cWkEpdZAn1tr9BY1T1m3F"
+				"bzz-raw://10623b6f839c87b0359b4244c58a0d3f7baec03cc9bc6e4ae587f62022126e5f",
+				"dweb:/ipfs/QmcKe5T1arqK5idwiMpJ8ZQf5bdqaKEow8tXd99Lfd3X5G"
 			]
 		},
 		"contracts/nftMachineOwnership.sol": {
-			"keccak256": "0xc08e245b62e916ea9b50c59edb7b4b544a77c6794350e356085b6171c5840183",
+			"keccak256": "0x0248d1743ef36df25f7b800736ba6c119b56b3183d8bc2259087f5aba3d9a954",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://6d28e0493e3aa4fad5ccf0417c7a0afcbf597b46efdac51b5950350a1551cb46",
-				"dweb:/ipfs/QmbGYM3ZdfvgfJr6oNNPs4QigGLCHFxhrGWmSmVMwqWhrB"
+				"bzz-raw://338930b6c58f20d47ed7bd49cc43ffaac2c5c86ce946ddafe6a04a13f69de780",
+				"dweb:/ipfs/QmUt15Bt36kv8j9MhajKMMDktdYQ2tabm1tBD1xaQr34LA"
 			]
 		},
 		"contracts/nftMarket.sol": {

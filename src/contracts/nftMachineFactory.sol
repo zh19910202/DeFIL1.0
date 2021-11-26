@@ -14,10 +14,12 @@ contract NFTMachineFactory is Ownable{
 
     NFTMachine[] public NFTMachines;
 
+    //拥有的NFTtokenid
+    mapping(address=>uint[]) public NFTOfOwnerInfos;
 
-    mapping (uint => address) public NFTMachineToOwner;
+    mapping(uint => address) public NFTMachineToOwner;
 
-    mapping (address => uint) ownerNFTMachineCount;
+    mapping(address => uint) ownerNFTMachineCount;
 
     uint public NFTMachineCount = 0;
     
@@ -72,6 +74,8 @@ contract NFTMachineFactory is Ownable{
 
         NFTMachineCount = NFTMachineCount.add(1);
 
+        AddTokenIdToInfoMgr(id,onwer);
+
         emit NewNFTMachine(id);
   }
 
@@ -118,4 +122,31 @@ contract NFTMachineFactory is Ownable{
         }
     }
     
+    //添加NFTtoken至用户信息
+    function AddTokenIdToInfoMgr(uint id, address adds)internal returns (bool){
+        require(adds != address(0),"adds cant be zero");
+        NFTOfOwnerInfos[adds].push(id);
+    }
+
+    //删除NFTtoken至用户信息
+    function delTokenIdToInfoMgr(uint id, address adds)internal returns (bool){
+        require(adds != address(0),"adds cant be zero");
+        for(uint i=0;i<NFTOfOwnerInfos[adds].length;i++){
+            if (NFTOfOwnerInfos[adds][i] == id){
+                NFTOfOwnerInfos[adds][i] = NFTOfOwnerInfos[adds][NFTOfOwnerInfos[adds].length-1];
+                NFTOfOwnerInfos[adds].pop();
+                return true;
+            }
+        }
+        return false;
+        
+    }
+
+
+
+    //查询用户的所有NFT otkenid
+    function getTokenIdToInfoMgrAll(address adds)public view returns(uint[] memory){
+        require(adds != address(0),"adds cant be zero");
+        return NFTOfOwnerInfos[adds];
+    }
 }

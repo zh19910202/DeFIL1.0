@@ -69,8 +69,8 @@ class App extends Component {
 
     const NFTMarketInstance = new web3.eth.Contract(NFTMarket.abi,NFTMarket.address)
     
-    let NFTbalance = await NFTMarketInstance.methods.balanceOf(accounts[0]).call()
-    this.setState({NFTMarketInstance,NFTbalance})
+    
+    this.setState({NFTMarketInstance})
 
   }
   
@@ -138,7 +138,11 @@ class App extends Component {
  
 }
 
-
+//查询拥有的nfttoken
+  getAllNFTofOwer= async() =>{
+    let NFTbalance = await this.state.NFTMarketInstance.methods.getTokenIdToInfoMgrAll(this.state.account).call()
+    alert(NFTbalance.join('\n'))
+  }
 
 
   
@@ -156,6 +160,7 @@ class App extends Component {
   checkout = async()=>{
     let address = this.state.address
     let lists =  await this.state.NFTMarketInstance.methods.getNFTPendingReq(address).call()
+    
     alert(lists.join('\n'))
   }
 
@@ -324,7 +329,7 @@ class App extends Component {
        <div>EFIL余额：{this.state.EFILbalance}</div>
        <div>欠款：{this.state.currentBorrowBalance}</div>
        <div>已经抵押NFT：{this.state.tokenIds}</div>
-       <div>查询NFT数量：{this.state.NFTbalance}</div>
+       <div>查询NFT数量：<button onClick={()=>this.getAllNFTofOwer()}>确定</button></div>
        <div>EFIL授权至DEFIL:<input type="text" placeholder="授权额度" value = {this.state.amount} onChange = {(e) => {this.changeInput('amount',e)}}/><button onClick={()=>{this.authEFILToDeFIL()}}>确定</button></div>
        <div>EFIL授权至FreeMarket:<input type="text" placeholder="授权额度" value = {this.state.amount} onChange = {(e) => {this.changeInput('amount',e)}}/><button onClick={()=>{this.authEFILToFreeMarket()}}>确定</button></div>
        <div>NFT授权至DEFIL:<input type="text" placeholder="tokenID" value = {this.state.tokenID} onChange = {(e) => {this.changeInput('tokenID',e)}}/><button onClick={()=>{this.authNFTToDeFIL()}}>确定</button></div>

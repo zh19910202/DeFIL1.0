@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/EFIL.sol": "SafeMath"
+			"contracts/WhitePaperInterestRateModel.sol": "SafeMath"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -27,18 +27,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"contracts/EFIL.sol": {
-			"keccak256": "0x6bfe2beef5bb84bff7a5631158105313a3be8fdac34831089d3f832fbef2f8f4",
-			"license": "MIT",
+		"contracts/WhitePaperInterestRateModel.sol": {
+			"keccak256": "0xd5e4f2813c5285c3c1468b792a2c914f81a1e20f3fb79a5500461e7ffd396b21",
 			"urls": [
-				"bzz-raw://27394bd74969817abec84f21997dc58ae102e5f0b513cd6a0ed096d657733557",
-				"dweb:/ipfs/QmXAjDxcMvj7gZ5jDbRtx7VVgiYFEn54Gm5bm8S3yggoKg"
+				"bzz-raw://73f808696759b52dd0257d02cf71716791c505bdbee05e54fd32f7e236896d0b",
+				"dweb:/ipfs/QmP8iwi9UoE5xAnWuUFmZk6ULhBTy1KksSKWBFhagUU1xx"
 			]
 		}
 	},
