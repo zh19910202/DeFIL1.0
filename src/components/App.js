@@ -329,7 +329,7 @@ class App extends Component {
        <div>EFIL余额：{this.state.EFILbalance}</div>
        <div>欠款：{this.state.currentBorrowBalance}</div>
        <div>已经抵押NFT：{this.state.tokenIds}</div>
-       <div>查询NFT数量：<button onClick={()=>this.getAllNFTofOwer()}>确定</button></div>
+       <div>查询NFTid：<button onClick={()=>this.getAllNFTofOwer()}>确定</button></div>
        <div>EFIL授权至DEFIL:<input type="text" placeholder="授权额度" value = {this.state.amount} onChange = {(e) => {this.changeInput('amount',e)}}/><button onClick={()=>{this.authEFILToDeFIL()}}>确定</button></div>
        <div>EFIL授权至FreeMarket:<input type="text" placeholder="授权额度" value = {this.state.amount} onChange = {(e) => {this.changeInput('amount',e)}}/><button onClick={()=>{this.authEFILToFreeMarket()}}>确定</button></div>
        <div>NFT授权至DEFIL:<input type="text" placeholder="tokenID" value = {this.state.tokenID} onChange = {(e) => {this.changeInput('tokenID',e)}}/><button onClick={()=>{this.authNFTToDeFIL()}}>确定</button></div>
