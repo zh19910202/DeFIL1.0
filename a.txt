@@ -1,2 +1,7 @@
 hello
+<<<<<<< HEAD
 dsa11111
+=======
+sdfdasf
+sdafsadf
+>>>>>>> 9a38e5fe67abd6e6cac0f3ac09ac67f3f84ad7a2
